@@ -13,10 +13,10 @@
 // 4, 5, 7 => 4 < 5 < 7 - нет
 // Результат: [0, 1, 1, 0]
 
-arr = [1, 3, 5, 4, 5, 7]
+const arr = [1, 3, 5, 4, 5, 7];
 
 function compare(arr) {
-    var modified = []
+    let modified = [];
     for(i=0; i<=arr.length-3; i++) {
         if ((arr[i]>arr[i+1] && arr[i+1]<arr[i+2]) || (arr[i]<arr[i+1] && arr[i+1]>arr[i+2])) {
             modified.push(1)
@@ -24,7 +24,7 @@ function compare(arr) {
             modified.push(0)
         }
     }
-    console.log(modified);
+    return modified
 }
 
-compare(arr)
+console.log(compare(arr))

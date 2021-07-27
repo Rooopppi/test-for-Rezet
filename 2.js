@@ -30,7 +30,7 @@ const b = [
             [4, 5, 6, 8, 1],
             [7, 8, 9, 4, 5],
         ];
-const ideal = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const ideal = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function checkMatr(matr) {
   const start = matr[0].length - 3;
@@ -43,7 +43,7 @@ function checkMatr(matr) {
       result.push(false);
     };
   }
-  return result;
+  return result
 }
 
 console.log(checkMatr(b));
